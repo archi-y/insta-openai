@@ -1,6 +1,15 @@
 # insta-openai
 A python script for instagram that answers automatically to unread DMs using openai api and instagrapi !
+
 ![logo](https://user-images.githubusercontent.com/26002863/208255649-19667d52-b016-4dbe-bfdd-96c3f13ebf9a.png)
+
+![size](https://shields.io/github/repo-size/archi-y/insta-openai)
+![license](https://shields.io/github/license/archi-y/insta-openai)
+![issues](https://img.shields.io/github/issues-raw/archi-y/insta-openai)
+![release](https://img.shields.io/github/v/release/archi-y/insta-openai)
+![commit](https://img.shields.io/github/last-commit/archi-y/insta-openai)
+![stars](https://img.shields.io/github/stars/archi-y/insta-openai)
+
 
 # Table of Contents 
 
