@@ -1,5 +1,5 @@
 # insta-openai
-A python script for instagram that answers automatically to unread private messages using openai api and instagrapi !
+A python script for instagram that answers automatically to unread DMs using openai api and instagrapi !
 ![logo](https://user-images.githubusercontent.com/26002863/208255649-19667d52-b016-4dbe-bfdd-96c3f13ebf9a.png)
 
 # Table of Contents 
