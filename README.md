@@ -110,4 +110,4 @@ If it's still not working you can open an issue
 
 ### Notes
 
-I'm not an experimented python coder and this script is new so if you have problems with it, make an Issue and I will try to help you with it.
+I'm not an experienced python coder and this script is new so if you have problems with it, make an Issue and I will try to help you with it.
