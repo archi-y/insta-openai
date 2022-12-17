@@ -1,0 +1,2 @@
+python instagpt.py
+PAUSE
