@@ -7,7 +7,7 @@ cl = Client(json.load(open('login.json')))
 #OpenAI Key from key file
 openai.api_key = open("openai.key", "r").read()
 
-print("-----------------------|  InstaGPT v1.1  |-----------------------")
+print("-----------------------|  InstaGPT v0.1.3  |-----------------------")
 
 def Read():
     try:
