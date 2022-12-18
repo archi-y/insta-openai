@@ -7,7 +7,8 @@ ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:s$PATH"
 
-RUN python -m pip install --upgrade pip && pip install -r requirements.txt
+RUN python -m pip install --upgrade pip; \
+    pip install -r requirements.txt
 
 ADD instagpt_docker.py /
 #Files generated with login.py
