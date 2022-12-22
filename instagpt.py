@@ -57,7 +57,6 @@ signal.signal(signal.SIGINT, handler)
 
 while True:
     msg = Read()
-    print(msg)
     if msg != None: #If there is a valid message
         print("Message : ")
         print(msg)
