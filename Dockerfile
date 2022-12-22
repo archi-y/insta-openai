@@ -10,11 +10,11 @@ ENV PATH="$VIRTUAL_ENV/bin:s$PATH"
 RUN python -m pip install --upgrade pip; \
     pip install -r requirements.txt
 
-ADD instagpt_docker.py /
+ADD instagpt.py /
 #Files generated with login.py
 ADD login.json /
 ADD openai.key / 
 #OpenAI prompt context txt
 ADD context_base.txt /
 
-CMD [ "python", "./instagpt_docker.py" ]
+CMD [ "python", "./instagpt.py" ]
