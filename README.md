@@ -115,6 +115,7 @@ Please make sure that :
 - You followed the installation instructions :
   - You have Python 3 installed
   - You have all the dependencies installed with `pip install -r requirements.txt`
+- You might need to login again with login.py (this will be fixed "soon")
 
 If it's still not working you can open an issue
 
