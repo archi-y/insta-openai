@@ -11,11 +11,10 @@ try:
         cl.get_settings(),
         open('login.json', 'w')
     )
-except:
+except Exception as err:
+    print(f"Unexpected {err=}, {type(err)=}")
     print("Can't login to instagram")
 
 f = open("openai.key", "w")
 f.write(openai)
 f.close()
-
-cl = Client(json.load(open('login.json')))
