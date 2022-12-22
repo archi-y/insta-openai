@@ -1,6 +1,8 @@
 from instagrapi import Client
 import json,openai,time,random,signal
 
+#Don't forget to run login.py if you're running this for the first time
+
 #Instagram login from json file
 cl = Client(json.load(open('login.json')))
 
@@ -28,6 +30,9 @@ def Wait(random):
 
 def Ai(start):
     fr = open("context_base.txt", "r", encoding='utf-8').read() #fr = file read
+
+    #Do not forget to change Fred to the name you defined in context_base.txt
+
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt=fr + str(start) + "\nFred:",  #Send Context, the sentence and then ask the ai to complete
@@ -36,8 +41,9 @@ def Ai(start):
         top_p=1,
         frequency_penalty=0.0,
         presence_penalty=0.6,
-        stop=[" Human:", " Fred:"]
+        stop=[" Human:", " Fred:"]  
     )
+    
     results = response['choices'][0]['text']
     print(results)
     return results
@@ -51,6 +57,7 @@ signal.signal(signal.SIGINT, handler)
 
 while True:
     msg = Read()
+    print(msg)
     if msg != None: #If there is a valid message
         print("Message : ")
         print(msg)
@@ -59,7 +66,7 @@ while True:
             Send(Ai(msg))
             print("Sent\n")
         except:
-            print("Message could not be sent\n")
+            print("Message could not be sent, did you add your api key to openai.key ?\n")
     else:
         print("No new message\n") 
         #Add delay to avoid potential bans 
