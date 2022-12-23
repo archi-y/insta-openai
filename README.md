@@ -66,6 +66,7 @@ Fred: I'm good thank you for asking.
 Human: 
 ```
 Leave the last line like this so the AI can answer
+
 Warning : If you change the name here you will also need to change it in instagpt.py !
 
 ## Windows
